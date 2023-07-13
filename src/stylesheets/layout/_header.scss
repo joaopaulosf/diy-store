@@ -1,0 +1,57 @@
+@use "./../abstracts" as *;
+@use "./../utilities/" as *;
+
+.header {
+  position: relative;
+  text-align: center;
+  color: $color-light;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    @include center;
+    position: absolute;
+    width: 100%;
+    line-height: 30px;
+  }
+
+  &__title {
+    font-size: $font-large;
+    font-weight: 500;
+    padding: 0 10px;
+  }
+
+  &__span {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
+  &__paragraph {
+    font-size: $font-small;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &__button {
+    width: 100px;
+    height: 32px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: background-color 50ms ease;
+    border: 1px solid $color-button;
+    background-color: transparent;
+
+    &:hover {
+      border: 1px solid $color-light;
+      background-color: $color-button;
+    }
+  }
+
+  &__link {
+    color: $color-light;
+    font-weight: 600;
+  }
+}

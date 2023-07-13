@@ -1,0 +1,22 @@
+@use "../utilities/" as *;
+@use "../abstracts/" as *;
+
+.about {
+  @include container;
+  text-align: center;
+
+  &__title {
+    font-size: $font-large;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    font-size: $font-small;
+    line-height: 22px;
+
+    &--first {
+      margin-bottom: 20px;
+    }
+  }
+}

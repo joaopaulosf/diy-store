@@ -1,0 +1,19 @@
+@use "../utilities/" as *;
+@use "../abstracts/" as *;
+
+.products {
+  @include container;
+
+  &__title {
+    font-size: $font-large;
+    margin-bottom: 25px;
+  }
+
+  &__cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    column-gap: 5px;
+    row-gap: 17px;
+  }
+}

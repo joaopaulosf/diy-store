@@ -1,0 +1,10 @@
+@mixin icon() {
+  width: 25px;
+  height: 25px;
+}
+
+@mixin center() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

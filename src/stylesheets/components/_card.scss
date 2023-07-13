@@ -1,0 +1,56 @@
+@use "../utilities/" as *;
+@use "../abstracts/" as *;
+
+.card {
+  width: 100%;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+
+    .card__name {
+      text-decoration: underline;
+    }
+  }
+
+  &__sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 8px;
+    width: 40px;
+    height: 30px;
+    box-shadow: 2px 2px 4px $color-shadow;
+    font-size: $font-sale;
+    color: $color-light;
+    background-color: rgba(133, 175, 99, 0.658);
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__name {
+    flex-basis: 100%;
+    font-size: $font-small;
+    font-weight: 300;
+    padding: 5px 0;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: $font-small;
+
+    &--sale {
+      opacity: 0.4;
+      text-decoration: line-through;
+    }
+  }
+}
