@@ -22,12 +22,8 @@ type ProductType = productProps | undefined;
 
 export const SingleProduct = () => {
   const { productId } = useParams();
-  const {
-    getItemQuantity,
-    increaseQuantity,
-    decreaseQuantity,
-    removeFromCart,
-  } = useShoppingCart();
+  const { getItemQuantity, increaseQuantity, removeFromCart } =
+    useShoppingCart();
   const product: ProductType = productsData.find(
     (product) => product.id === productId
   );
