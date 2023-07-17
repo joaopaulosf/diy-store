@@ -39,7 +39,6 @@
 
   &__icon {
     @include icon;
-    transition: height 0.1s;
   }
 
   &__image {
@@ -50,7 +49,24 @@
     @include icon;
   }
 
-  &__link {
+  &__cart {
+    position: relative;
+  }
+}
+
+.cart {
+  &__icon {
     @include icon;
+  }
+
+  &__quantity {
+    position: absolute;
+    background-color: #abc58e;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    @include flex-center;
   }
 }

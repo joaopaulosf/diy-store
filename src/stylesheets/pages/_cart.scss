@@ -1,0 +1,46 @@
+@use "../abstracts/" as *;
+@use "../utilities/" as *;
+
+.cart {
+  &__content {
+    @include container;
+    padding-top: 55px;
+    padding-bottom: 0;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    margin-bottom: 8px;
+  }
+
+  &__title,
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: $font-large;
+  }
+
+  &__link {
+    font-size: $font-small;
+    text-decoration: underline;
+  }
+
+  &__products,
+  &__total {
+    font-size: $font-sale;
+    opacity: 0.5;
+  }
+
+  &__subtotal {
+    text-align: end;
+    font-size: $font-medium;
+    margin-top: 30px;
+  }
+}

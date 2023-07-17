@@ -3,7 +3,7 @@ import { Main } from "./components";
 
 export const Home = () => {
   return (
-    <section className="home">
+    <section>
       <Header />
       <Main />
     </section>

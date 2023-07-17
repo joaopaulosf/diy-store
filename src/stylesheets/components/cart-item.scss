@@ -1,0 +1,49 @@
+@use "../abstracts/" as *;
+
+.item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+
+  &__image {
+    width: 110px;
+    height: 110px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__name,
+  &__price {
+    font-size: $font-small;
+  }
+
+  &__price {
+    opacity: 0.5;
+  }
+
+  &__actions {
+    @include flex-center;
+    gap: 30px;
+    font-size: $font-small;
+    border: 1px solid $color-border-light;
+    width: 125px;
+  }
+
+  &__signal {
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &__total {
+    flex-basis: 100%;
+    text-align: end;
+    font-weight: 500;
+    font-size: $font-small;
+  }
+}

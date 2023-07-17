@@ -3,9 +3,11 @@ import { PiShoppingCartThin as Cart } from "react-icons/pi";
 
 import { useNav } from "hooks/useNav";
 import BrandIcon from "assets/images/brand.webp";
+import { useShoppingCart } from "context/ShoppingCart";
 
 export const Navbar = () => {
   const { menuIcon, closeMenu, dropdownMenu } = useNav();
+  const { cartQuantity } = useShoppingCart();
 
   return (
     <>
@@ -31,10 +33,13 @@ export const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div className="nav__icons">
-          <Link to="/cart" onClick={closeMenu}>
-            <Cart className="nav__link" title="cart" />
+        <div className="nav__cart">
+          <Link to="/cart" className="cart" onClick={closeMenu}>
+            <Cart className="cart__icon" title="cart" />
           </Link>
+          {cartQuantity ? (
+            <span className="cart__quantity">{cartQuantity}</span>
+          ) : null}
         </div>
       </nav>
     </>

@@ -1,0 +1,54 @@
+@use "../abstracts/" as *;
+@use "../utilities/" as *;
+
+.auth {
+  @include container;
+
+  &__login {
+    margin: 55px;
+    text-align: center;
+    font-size: $font-login;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__email,
+  &__password {
+    padding: 12px 25px;
+    border: 1px solid $color-border;
+    font-size: $font-medium;
+  }
+
+  &__email {
+    margin-bottom: 18px;
+  }
+
+  &__forgot {
+    margin: 5px 0 25px 0;
+    text-decoration: underline;
+    font-size: $font-sale;
+    font-weight: 300;
+  }
+
+  &__signin,
+  &__create {
+    width: 95px;
+    height: 30px;
+    margin: 0 auto;
+  }
+
+  &__signin {
+    border: none;
+    background-color: $color-dark;
+    color: $color-light;
+    cursor: pointer;
+  }
+
+  &__create {
+    @include flex-center;
+    text-align: center;
+  }
+}
