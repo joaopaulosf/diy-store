@@ -6,7 +6,7 @@
     "price": 230,
     "sale": 110,
     "image": {
-      "main": "/src/assets/images/bluetooth-radio-main.webp",
+      "main": "/src/assets/images/bluetooth-radio-main.avif",
       "content": "/src/assets/images/bluetooth-radio-content.webp"
     }
   },
