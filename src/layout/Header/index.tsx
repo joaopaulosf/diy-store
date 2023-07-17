@@ -1,4 +1,4 @@
-import bgWoman from "assets/images/woman-mobile.avif";
+import bgWoman from "/assets/images/woman-mobile.avif";
 import { Link } from "react-router-dom";
 
 export const Header = () => {

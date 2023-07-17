@@ -6,8 +6,8 @@
     "price": 230,
     "sale": 110,
     "image": {
-      "main": "/public/bluetooth-radio.avif",
-      "content": "/src/assets/images/bluetooth-radio-content.webp"
+      "main": "/assets/images/bluetoothRadio/bluetooth-radio-content.webp",
+      "content": "/assets/images/bluetoothRadio/bluetooth-radio-content.webp"
     }
   },
   {
@@ -17,8 +17,8 @@
     "price": 320,
     "sale": 140,
     "image": {
-      "main": "/src/assets/images/folkInstruments/folk-instruments-main.webp",
-      "content": "/src/assets/images/folkInstruments/folk-instruments-content.webp"
+      "main": "/assets/images/folkInstruments/folk-instruments-main.webp",
+      "content": "/assets/images/folkInstruments/folk-instruments-content.webp"
     }
   },
   {
@@ -27,8 +27,8 @@
     "description": "Traditionally, watchmaking is an art that takes years to master. But for you? All it takes is about two hours, and this kit. You'll find everything you need inside (parts, tools, and easy instructions) to build your very own mechanical watch. Here are the nuts and bolts about the timepiece you'll make: a hand-wound, 21-jewel, Miyota 8215 automatic movement with more than 40 hours in reserve power; a date-setting feature; a 40mm-diameter sapphire glass case; and a stainless steel band. The horology nerds in your life will love this one, as well as anyone who just likes to pass the time by tinkering with a new project. Assembled in Los Angeles, California.",
     "price": 820,
     "image": {
-      "main": "/src/assets/images/watchMaking/watch-main.webp",
-      "content": "/src/assets/images/watchMaking/watch-content.webp"
+      "main": "/assets/images/watchMaking/watch-main.webp",
+      "content": "/assets/images/watchMaking/watch-content.webp"
     }
   },
   {
@@ -37,8 +37,8 @@
     "description": "Adventurous eaters and home cooks, you have new Saturday night plans. Xiao long bao are steamed dumplings filled with soup and ingredients like tofu or mushrooms. This kit includes everything you need to make the impressive morsels at home, from natural beech wood dough rollers to a steam basket for cooking. So how do you get soup into a dumpling? The included agar agar powder is a natural red algae gelatin that turns the broth into a solid form that's easy to tuck into the dough. Once steamed, it melts back into a liquid to create savory purses of hot soup. To eat this popular Shanghai street food, take a tiny bite of the dough, slurp out the delicious broth, and finish the rest in one happy gulp. Qǐng màn yòng (enjoy your meal)! Components made in China. Assembled in California.",
     "price": 220,
     "image": {
-      "main": "/src/assets/images/chineseSoupDumpling/chinese-soup-dumpling-kit-main.webp",
-      "content": "/src/assets/images/chineseSoupDumpling/chinese-soup-dumpling-kit-content.webp"
+      "main": "/assets/images/chineseSoupDumpling/chinese-soup-dumpling-kit-main.webp",
+      "content": "/assets/images/chineseSoupDumpling/chinese-soup-dumpling-kit-content.webp"
     }
   },
   {
@@ -47,8 +47,8 @@
     "description": "Dont let a lack of a green thumb or time keep you from filling your home with the beauty of nature. Complete with hangable geometrically shaped housings, this DIY project helps art lovers and would-be gardeners design their own miniature succulent terrariums. Piles of white pebbles set the foundation for your carefully crafted greenery. Faux moss fills each scene with beautifully textured accents, and pieces of soft felt fold down and roll up to become 18 lifelike botanical creations. A colorful addition to walls, windowsills, and desks, this kit provides a relaxing indoor activity, or three thoughtful gifts to share, that will never require watering, repotting, or sunlight. Made in China.",
     "price": 240,
     "image": {
-      "main": "/src/assets/images/miniTerrariums/mini-terrariums-main.webp",
-      "content": "/src/assets/images/miniTerrariums/mini-terrariums-content.webp"
+      "main": "/assets/images/miniTerrariums/mini-terrariums-main.webp",
+      "content": "/assets/images/miniTerrariums/mini-terrariums-content.webp"
     }
   },
   {
@@ -58,8 +58,8 @@
     "price": 460,
     "sale": 320,
     "image": {
-      "main": "/src/assets/images/electricGuitar/electric-guitar-main.webp",
-      "content": "/src/assets/images/electricGuitar/electric-guitar-content.webp"
+      "main": "/assets/images/electricGuitar/electric-guitar-main.webp",
+      "content": "/assets/images/electricGuitar/electric-guitar-content.webp"
     }
   },
   {
@@ -69,8 +69,8 @@
     "price": 280,
     "sale": 220,
     "image": {
-      "main": "/src/assets/images/mossArt/moss-art-main.webp",
-      "content": "/src/assets/images/mossArt/moss-art-content.webp"
+      "main": "/assets/images/mossArt/moss-art-main.webp",
+      "content": "/assets/images/mossArt/moss-art-content.webp"
     }
   },
   {
@@ -79,8 +79,8 @@
     "description": "Keep track of whos drinking what—and do it in style—with this coaster-making kit from Lauren Sadler. It contains everything you need to craft two wooden coasters with gorgeous glass tile mosaics, each centered around the initial of your choosing. Glue down the blue square tiles to form the letters (maybe to represent you and your BFFs first names), then fill in around them with the colored glass fragments in a cool arrangement (ombré, anyone?). After grouting the tiles, youll have yourself two beautiful and functional works of art. The finished coasters would make a lovely housewarming gift for a close friend, or just give the whole kit to the avid crafter in your life. Made in China.",
     "price": 300,
     "image": {
-      "main": "/src/assets/images/mosaicInitialCoasters/mosaic-initial-coasters-main.webp",
-      "content": "/src/assets/images/mosaicInitialCoasters/mosaic-initial-coasters-content.webp"
+      "main": "/assets/images/mosaicInitialCoasters/mosaic-initial-coasters-main.webp",
+      "content": "/assets/images/mosaicInitialCoasters/mosaic-initial-coasters-content.webp"
     }
   },
   {
@@ -89,8 +89,8 @@
     "description": "Gear up for a DIY bubble-blowing contest with this kit that lets you make over a half pound of homemade bubble gum. It includes all of the ingredients necessary (and none that arent): gum base, powdered sugar, gum flavoring, and corn syrup, plus a mixing container, mixing tool, waxed paper, and complete instructions to mix up your own sweet, chewy treat. Great as a rainy day activity or birthday party gift, its made for kids 8 and up with adult supervision. Adult supervision of bubble-blowing fun? Not recommended. Made in Virginia.",
     "price": 320,
     "image": {
-      "main": "/src/assets/images/bubbleGum/bubble-main.webp",
-      "content": "/src/assets/images/bubbleGum/bubble-content.webp"
+      "main": "/assets/images/bubbleGum/bubble-main.webp",
+      "content": "/assets/images/bubbleGum/bubble-content.webp"
     }
   },
   {
@@ -99,8 +99,8 @@
     "description": "Baby Blue's out front, Yellow Yoohoo's one length behind, and Green Dream is approaching the big twist. It's not some futuristic Formula 1 race: It's a marble run designed and assembled by your little one. Using 99 interchangeable pieces, builders as young as 4 create thruways with durable wooden tracks, colorful blocks, and plenty of surprises. Add an accelerator ramp (or nine) to speed spheres along. Throw in a seesaw or two to keep those 25 included orbs guessing. Even the storage bucket can be a part of every course. Just don't forget to name your marbles—that's our favorite part. Made in China.",
     "price": 340,
     "image": {
-      "main": "/src/assets/images/marbleRunStack/marble-run-stack-set-main.webp",
-      "content": "/src/assets/images/marbleRunStack/marble-run-stack-set-content.webp"
+      "main": "/assets/images/marbleRunStack/marble-run-stack-set-main.webp",
+      "content": "/assets/images/marbleRunStack/marble-run-stack-set-content.webp"
     }
   },
   {
@@ -109,8 +109,8 @@
     "description": "From the rocky shores of Acadia to the sandstone formations of Zion, Americas national parks are truly a sight to behold. Try your hand at capturing their beauty with this Paint by Shadow® kit. Inside, youll find two canvases printed with grayscale images of the park you choose, plus paint, brushes, and instructions. Render them in the prescribed colors or choose your own palette—either way, your finished piece is sure to be just as breathtaking as the park itself. Made in Alabama.",
     "price": 360,
     "image": {
-      "main": "/src/assets/images/nationalParksPaint/national-parks-paint-main.webp",
-      "content": "/src/assets/images/nationalParksPaint/national-parks-paint-content.webp"
+      "main": "/assets/images/nationalParksPaint/national-parks-paint-main.webp",
+      "content": "/assets/images/nationalParksPaint/national-parks-paint-content.webp"
     }
   },
   {
@@ -120,8 +120,8 @@
     "price": 380,
     "sale": 190,
     "image": {
-      "main": "/src/assets/images/marketTotePaint/market-tote-paint-by-number-main.webp",
-      "content": "/src/assets/images/marketTotePaint/market-tote-paint-by-number-content.webp"
+      "main": "/assets/images/marketTotePaint/market-tote-paint-by-number-main.webp",
+      "content": "/assets/images/marketTotePaint/market-tote-paint-by-number-content.webp"
     }
   }
 ]

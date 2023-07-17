@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { PiShoppingCartThin as Cart } from "react-icons/pi";
 
 import { useNav } from "hooks/useNav";
-import BrandIcon from "assets/images/brand.webp";
+import BrandIcon from "/assets/images/brand.webp";
 import { useShoppingCart } from "context/ShoppingCart";
 
 export const Navbar = () => {
