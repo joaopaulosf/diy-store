@@ -1,51 +1,53 @@
-import { useShoppingCart } from "context/ShoppingCart";
-import products from "data/products.json";
+import { PiTrashLight as Trash } from "react-icons/pi";
+
 import { ErrorPage } from "pages/Error";
 import { formatCurrency } from "utils";
-
-type CartItemProps = {
-  id: number;
-  quantity: number;
-};
+import { CartItemProps } from "models";
+import { useShoppingCart } from "hooks/useShoppingCart";
 
 export const CartItem = ({ id, quantity }: CartItemProps) => {
-  const { decreaseQuantity, increaseQuantity } = useShoppingCart();
-  const item = products.find((item) => Number(item.id) === id);
+  const { decreaseQuantity, increaseQuantity, removeFromCart, getCartItem } =
+    useShoppingCart();
+
+  const item = getCartItem(id);
 
   if (!item) {
     return <ErrorPage />;
   }
 
+  const { id: productId, name, image, price, sale } = item;
+  const itemId = Number(productId);
+
   return (
     <section className="item">
-      <img src={item.image.main} alt={item.name} className="item__image" />
+      <img src={image.main} alt={name} className="item__image" />
       <section className="item__info">
-        <h2 className="item__name">{item.name}</h2>
+        <h2 className="item__name">{name}</h2>
         <span className="item__price">
-          {item.sale ? formatCurrency(item.sale) : formatCurrency(item.price)}
+          {sale ? formatCurrency(sale) : formatCurrency(price)}
         </span>
         <div className="item__actions">
           <span
             className="item__signal"
-            onClick={() => decreaseQuantity(Number(item.id))}
+            onClick={() => decreaseQuantity(itemId)}
           >
             -
           </span>
           <span className="item__quantity">{quantity}</span>
           <span
             className="item__signal"
-            onClick={() => increaseQuantity(Number(item.id))}
+            onClick={() => increaseQuantity(itemId)}
           >
             +
           </span>
+          <Trash
+            className="item__trash"
+            onClick={() => removeFromCart(itemId)}
+          />
         </div>
       </section>
       <section className="item__total">
-        <span>
-          {item.sale
-            ? formatCurrency(item.sale * quantity)
-            : formatCurrency(item.price * quantity)}
-        </span>
+        <span>{formatCurrency((sale || price) * quantity)}</span>
       </section>
     </section>
   );

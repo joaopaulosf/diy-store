@@ -26,12 +26,18 @@
     opacity: 0.5;
   }
 
+  &__trash {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
   &__actions {
     @include flex-center;
     gap: 30px;
     font-size: $font-small;
     border: 1px solid $color-border-light;
-    width: 125px;
+    padding: 0 5px;
   }
 
   &__signal {

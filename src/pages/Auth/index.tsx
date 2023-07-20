@@ -9,7 +9,9 @@ export const Auth = () => {
           placeholder="Password"
           className="auth__password"
         />
-        <span className="auth__forgot">forgot your password</span>
+        <a className="auth__forgot" href="">
+          forgot your password
+        </a>
         <button className="auth__signin">Sign in</button>
         <a className="auth__create" href="">
           Create account

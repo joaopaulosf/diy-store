@@ -8,6 +8,12 @@ body {
   color: $color-dark;
 }
 
+h1,
+h2,
+p {
+  pointer-events: none;
+}
+
 a {
   text-decoration: none;
   color: $color-dark;

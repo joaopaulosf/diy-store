@@ -4,6 +4,7 @@
 .about {
   @include container;
   text-align: center;
+  max-width: 768px;
 
   &__title {
     font-size: $font-large;

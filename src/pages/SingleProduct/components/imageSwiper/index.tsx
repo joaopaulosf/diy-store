@@ -4,19 +4,11 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css";
 
-interface ProductProps {
-  id: string;
-  name: string;
-  description: string;
-  price: number;
-  sale?: number;
-  image: {
-    main: string;
-    content: string;
-  };
-}
+import { ProductProps } from "models";
 
 export const ImageSwiper = ({ product }: { product: ProductProps }) => {
+  const { image, name } = product;
+
   return (
     <Swiper
       pagination={{
@@ -27,18 +19,10 @@ export const ImageSwiper = ({ product }: { product: ProductProps }) => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <img
-          className="product__image"
-          src={product?.image.main}
-          alt={product?.name}
-        />
+        <img className="product__image" src={image.main} alt={name} />
       </SwiperSlide>
       <SwiperSlide>
-        <img
-          className="product__image"
-          src={product?.image.content}
-          alt={product?.name}
-        />
+        <img className="product__image" src={image.content} alt={name} />
       </SwiperSlide>
     </Swiper>
   );

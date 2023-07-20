@@ -8,18 +8,21 @@
     margin: 55px;
     text-align: center;
     font-size: $font-login;
+    font-weight: 500;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
+    max-width: 460px;
+    margin: 0 auto;
   }
 
   &__email,
   &__password {
     padding: 12px 25px;
     border: 1px solid $color-border;
-    font-size: $font-medium;
+    font-size: $font-small;
   }
 
   &__email {
@@ -38,6 +41,7 @@
     width: 95px;
     height: 30px;
     margin: 0 auto;
+    font-size: $font-sale;
   }
 
   &__signin {

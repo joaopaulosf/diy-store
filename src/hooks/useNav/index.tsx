@@ -1,11 +1,6 @@
-import { ReactNode, useState } from "react";
+import { IuseNav } from "models";
+import { useState } from "react";
 import { PiListThin as Menu, PiXThin as Close } from "react-icons/pi";
-
-interface IuseNav {
-  closeMenu: () => void;
-  menuIcon: ReactNode;
-  dropdownMenu: string;
-}
 
 export const useNav = (): IuseNav => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +19,7 @@ export const useNav = (): IuseNav => {
     <Menu className="nav__icon" onClick={toggleMenu} />
   );
 
-  const dropdownMenu = isMenuOpen ? "nav__links--open" : "";
+  const dropdownMenu = isMenuOpen && "nav__links--open";
 
   return { closeMenu, menuIcon, dropdownMenu };
 };

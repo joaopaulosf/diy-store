@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { PiPaypalLogoThin as Paypal } from "react-icons/pi";
 
 import { CartItem } from "components/CartItem";
 import { ProductCards } from "components/ProductCards";
-import { useShoppingCart } from "context/ShoppingCart";
 import products from "data/products.json";
 import { formatCurrency } from "utils";
+import { useShoppingCart } from "hooks/useShoppingCart";
 
 export const Cart = () => {
   const { cartItems } = useShoppingCart();
@@ -42,6 +43,10 @@ export const Cart = () => {
             }, 0)
           )}
         </div>
+        <button className="cart__finish">
+          <Paypal className="cart__paypal" />
+          Paypal
+        </button>
       </section>
       <ProductCards
         cardClass="card"

@@ -3,6 +3,7 @@
 
 .products {
   @include container;
+  max-width: 768px;
 
   &__title {
     font-size: $font-large;

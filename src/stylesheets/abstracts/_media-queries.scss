@@ -1,0 +1,46 @@
+$layout-breakpoint-small: 768px;
+
+@media screen and (min-width: $layout-breakpoint-small) {
+  .nav {
+    &__menu {
+      display: none;
+    }
+
+    .nav__links {
+      height: auto;
+      position: static;
+      flex-direction: row;
+      justify-content: start;
+    }
+  }
+
+  .header__image {
+    content: url("/assets/images/woman.avif");
+  }
+
+  .product {
+    display: flex;
+    gap: 20px;
+
+    .product__title {
+      margin-top: 0;
+    }
+
+    .product__content {
+      width: 50%;
+      height: 100%;
+    }
+  }
+
+  .swiper {
+    width: 45%;
+    height: 45%;
+  }
+
+  .cart__content {
+    .cart__finish {
+      max-width: 360px;
+      margin-left: auto;
+    }
+  }
+}

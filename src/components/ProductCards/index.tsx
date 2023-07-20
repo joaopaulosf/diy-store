@@ -1,10 +1,5 @@
 import { Card } from "components/Card";
-
-interface ProductsProps {
-  productsTitle: string;
-  cardQuantity: number;
-  cardClass: string;
-}
+import { ProductsProps } from "models";
 
 export const ProductCards = ({
   productsTitle,
