@@ -19,7 +19,7 @@ export const CartItem = ({ id, quantity }: CartItemProps) => {
   const itemId = Number(productId);
 
   return (
-    <section className="item">
+    <section className="item" role="group">
       <img src={image.main} alt={name} className="item__image" />
       <section className="item__info">
         <h2 className="item__name">{name}</h2>
@@ -42,6 +42,7 @@ export const CartItem = ({ id, quantity }: CartItemProps) => {
           </span>
           <Trash
             className="item__trash"
+            title="remove"
             onClick={() => removeFromCart(itemId)}
           />
         </div>
