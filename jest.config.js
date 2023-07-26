@@ -1,6 +1,7 @@
 export default {
   testEnvironment: "jest-environment-jsdom",
-  setupFilesAfterEnv: ["<rootDir>/.jest/setup-tests.js"],
+  setupFiles: ["whatwg-fetch"],
+  setupFilesAfterEnv: ["@testing-library/jest-dom"],
   moduleDirectories: ["node_modules", "src"],
   moduleNameMapper: {
     "swiper/(modules|react|css)": "<rootDir>/.jest/mocks/fileMock.js",

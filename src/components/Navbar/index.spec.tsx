@@ -1,34 +1,48 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { AppRoutes } from "config/routes";
+import { routesConfig } from "config/routes/routesConfig";
+import { RouterProvider, createMemoryRouter } from "react-router-dom";
+
+const router = createMemoryRouter(routesConfig, {
+  initialEntries: ["/"],
+});
+
+const user = userEvent.setup();
 
 describe("navigation-bar should work fine", () => {
   it("should start at home page", async () => {
-    render(<AppRoutes />);
-    expect(screen.getByAltText(/background-woman/i)).toBeInTheDocument();
+    const { getByAltText } = render(<RouterProvider router={router} />);
+    expect(getByAltText(/background-woman/i)).toBeInTheDocument();
   });
 
   it("should render home page", async () => {
-    render(<AppRoutes />);
-    await userEvent.click(screen.getByAltText(/brand-icon/i));
-    expect(screen.getByAltText(/background-woman/i)).toBeInTheDocument();
+    const { getByAltText } = render(<RouterProvider router={router} />);
+
+    const brandIcon = getByAltText(/brand-icon/i);
+    const bgWoman = getByAltText(/background-woman/i);
+
+    await user.click(brandIcon);
+    expect(bgWoman).toBeInTheDocument();
   });
 
   it("should render products page", async () => {
-    render(<AppRoutes />);
-    await userEvent.click(screen.getByRole("link", { name: "Buy now" }));
-    expect(screen.getByText(/products/i)).toBeInTheDocument();
+    const { getByRole } = render(<RouterProvider router={router} />);
+
+    await user.click(getByRole("link", { name: /buy now/i }));
+    expect(getByRole("heading", { name: /products/i })).toBeInTheDocument();
   });
 
   it("should render login page", async () => {
-    render(<AppRoutes />);
-    await userEvent.click(screen.getByRole("link", { name: "Login" }));
-    expect(screen.getByText(/create acount/i)).toBeInTheDocument();
+    const { getByText, getByRole } = render(<RouterProvider router={router} />);
+
+    await user.click(getByRole("link", { name: /login/i }));
+    expect(getByText(/sign in/i)).toBeInTheDocument();
   });
 
   it("should render cart page", async () => {
-    render(<AppRoutes />);
-    await userEvent.click(screen.getByTitle(/cart/i));
-    expect(screen.getByText(/your cart/i)).toBeInTheDocument();
+    const { getByRole, getByTitle } = render(<AppRoutes />);
+    await user.click(getByTitle(/cart/i));
+    expect(getByRole("heading", { name: /your cart/i })).toBeInTheDocument();
   });
 });

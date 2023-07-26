@@ -35,7 +35,7 @@ export const Navbar = () => {
         </ul>
         <div className="nav__cart">
           <Link to="/cart" className="cart" onClick={closeMenu}>
-            <Cart className="cart__icon" title="cart" aria-label="Cart" />
+            <Cart className="cart__icon" title="cart" />
           </Link>
           {cartQuantity > 0 && (
             <span className="cart__quantity">{cartQuantity}</span>
