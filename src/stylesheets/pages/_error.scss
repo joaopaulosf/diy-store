@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+.error {
+  @include flex-center;
+  flex-direction: column;
+  gap: 40px;
+  height: 100vh;
+
+  &__title {
+    font-size: $font-large-error;
+  }
+
+  &__paragraph {
+    font-size: $font-medium;
+  }
+}
