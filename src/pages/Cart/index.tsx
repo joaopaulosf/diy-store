@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { PiPaypalLogoThin as Paypal } from "react-icons/pi";
+import { useInView } from "react-intersection-observer";
 
 import { CartItem } from "components/CartItem";
 import { ProductCards } from "components/ProductCards";
@@ -7,11 +8,15 @@ import products from "data/products.json";
 import { formatCurrency } from "utils";
 import { useShoppingCart } from "hooks/useShoppingCart";
 
-export const Cart = () => {
+export default function Cart() {
   const { cartItems } = useShoppingCart();
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
 
   return (
-    <section className="cart">
+    <section
+      ref={myRef}
+      className={`${"cart"} ${myElementIsVisible ? "cart-show" : ""}`}
+    >
       <section className="cart__content">
         <div className="cart__title">
           <h1 className="cart__heading">Your cart</h1>
@@ -55,4 +60,4 @@ export const Cart = () => {
       />
     </section>
   );
-};
+}

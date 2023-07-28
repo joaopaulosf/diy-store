@@ -1,6 +1,6 @@
 import { ProductCards } from "components/ProductCards";
 
-export const Products = () => {
+export default function Products() {
   return (
     <>
       <ProductCards
@@ -10,4 +10,4 @@ export const Products = () => {
       />
     </>
   );
-};
+}

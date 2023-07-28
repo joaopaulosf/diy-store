@@ -1,6 +1,13 @@
+import { useInView } from "react-intersection-observer";
+
 export const About = () => {
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+
   return (
-    <section className="about">
+    <section
+      ref={myRef}
+      className={`${"about"} ${myElementIsVisible ? "about-show" : ""}`}
+    >
       <h1 className="about__title">About us</h1>
       <p className="about__paragraph about__paragraph--first">
         Welcome to our Do-It-Yourself Web Store! We are your go-to destination

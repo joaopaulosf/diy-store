@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { ShoppingCartProvider } from "context/ShoppingCart";
-import { routesConfig } from "./routesConfig";
+import routesConfig from "./routesConfig";
 
 const router = createBrowserRouter(routesConfig);
 

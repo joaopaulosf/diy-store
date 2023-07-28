@@ -1,21 +1,25 @@
 import { Outlet } from "react-router-dom";
+import { lazy, Suspense } from "react";
 
 import { Navbar } from "components/Navbar";
 import { Footer } from "layout/Footer";
-import { Auth } from "pages/Auth";
-import { Cart } from "pages/Cart";
-import { ErrorPage } from "pages/Error";
 import { Home } from "pages/Home";
-import { Products } from "pages/Products";
-import { SingleProduct } from "pages/SingleProduct";
+import Loading from "layout/Loading";
+const Auth = lazy(() => import("pages/Auth"));
+const Cart = lazy(() => import("pages/Cart"));
+const ErrorPage = lazy(() => import("pages/ErrorPage"));
+const Products = lazy(() => import("pages/Products"));
+const SingleProduct = lazy(() => import("pages/SingleProduct"));
 
-export const routesConfig = [
+const routesConfig = [
   {
     path: "/",
     element: (
       <>
         <Navbar />
-        <Outlet />
+        <Suspense fallback={<Loading />}>
+          <Outlet />
+        </Suspense>
         <Footer />
       </>
     ),
@@ -44,3 +48,5 @@ export const routesConfig = [
     ],
   },
 ];
+
+export default routesConfig;

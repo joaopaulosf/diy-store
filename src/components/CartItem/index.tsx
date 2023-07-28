@@ -1,6 +1,6 @@
 import { PiTrashLight as Trash } from "react-icons/pi";
 
-import { ErrorPage } from "pages/Error";
+import ErrorPage from "pages/ErrorPage";
 import { formatCurrency } from "utils";
 import { CartItemProps } from "models";
 import { useShoppingCart } from "hooks/useShoppingCart";

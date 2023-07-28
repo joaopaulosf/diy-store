@@ -1,12 +1,21 @@
-import bgWoman from "/assets/images/woman-mobile.avif";
+import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
+import bgWoman from "/assets/images/woman-mobile.avif";
+
 export const Header = () => {
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
+
   return (
     <section className="header">
       <img className="header__image" src={bgWoman} alt="background-woman" />
-      <section className="header__content">
-        <h1 className="header__title">
+      <section
+        ref={myRef}
+        className={`${"header__content"} ${
+          myElementIsVisible ? "header__content-show" : ""
+        }`}
+      >
+        <h1 ref={myRef} className="header__title">
           Do it <span className="header__span">Yourself</span> and save money!
         </h1>
         <p className="header__paragraph">

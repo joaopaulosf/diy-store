@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { AppRoutes } from "config/routes";
-import { routesConfig } from "config/routes/routesConfig";
+import routesConfig from "config/routes/routesConfig";
 import { RouterProvider, createMemoryRouter } from "react-router-dom";
 
 const router = createMemoryRouter(routesConfig, {

@@ -1,12 +1,14 @@
+import { useInView } from "react-intersection-observer";
 import { useParams } from "react-router-dom";
 
 import { formatCurrency } from "utils";
 import { ImageSwiper } from "./components/imageSwiper";
-import { ErrorPage } from "pages/Error";
+import ErrorPage from "pages/ErrorPage";
 import { useShoppingCart } from "hooks/useShoppingCart";
 
-export const SingleProduct = () => {
+export default function SingleProduct() {
   const { productId } = useParams();
+  const { ref: myRef, inView: myElementIsVisible } = useInView();
   const { getItemQuantity, increaseQuantity, getCartItem, removeFromCart } =
     useShoppingCart();
   const product = getCartItem(Number(productId));
@@ -23,7 +25,10 @@ export const SingleProduct = () => {
   const removeCart = () => removeFromCart(Number(id));
 
   return (
-    <section className="product">
+    <section
+      ref={myRef}
+      className={`${"product"} ${myElementIsVisible ? "product-show" : ""}`}
+    >
       <ImageSwiper product={product} />
       <div className="product__content">
         <h1 className="product__title">{name}</h1>
@@ -47,4 +52,4 @@ export const SingleProduct = () => {
       </div>
     </section>
   );
-};
+}

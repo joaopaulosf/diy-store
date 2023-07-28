@@ -34,11 +34,11 @@ export const Navbar = () => {
           </li>
         </ul>
         <div className="nav__cart">
-          <Link to="/cart" className="cart" onClick={closeMenu}>
-            <Cart className="cart__icon" title="cart" />
+          <Link to="/cart" className="navcart" onClick={closeMenu}>
+            <Cart className="navcart__icon" title="cart" />
           </Link>
           {cartQuantity > 0 && (
-            <span className="cart__quantity">{cartQuantity}</span>
+            <span className="navcart__quantity">{cartQuantity}</span>
           )}
         </div>
       </nav>
