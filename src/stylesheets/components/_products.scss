@@ -4,6 +4,12 @@
 .products {
   @include container;
   max-width: 768px;
+  opacity: 0;
+  transition: all 0.5s;
+
+  &-show {
+    opacity: 1;
+  }
 
   &__title {
     font-size: $font-large;

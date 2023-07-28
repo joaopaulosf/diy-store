@@ -3,6 +3,12 @@
 
 .auth {
   @include container;
+  opacity: 0;
+  transition: all 0.5s;
+
+  &-show {
+    opacity: 1;
+  }
 
   &__login {
     margin: 55px;

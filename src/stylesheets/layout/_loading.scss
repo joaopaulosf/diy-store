@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.loading {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__spinner {
+    height: 180px;
+    width: 180px;
+    border: 8px solid $color-border;
+    border-radius: 50%;
+    border-right-color: $color-loading;
+    animation: spin 1s infinite;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -15,7 +15,15 @@
     @include center;
     position: absolute;
     width: 100%;
+    filter: blur(5px);
+    opacity: 0;
+    transition: all 0.5s;
     line-height: 30px;
+
+    &-show {
+      filter: blur(0);
+      opacity: 1;
+    }
   }
 
   &__title {

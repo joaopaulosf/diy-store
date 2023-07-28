@@ -2,15 +2,10 @@
 
 .error {
   @include flex-center;
-  flex-direction: column;
-  gap: 40px;
+  width: 100vw;
   height: 100vh;
 
-  &__title {
-    font-size: $font-large-error;
-  }
-
-  &__paragraph {
-    font-size: $font-medium;
+  &__image {
+    width: 600px;
   }
 }

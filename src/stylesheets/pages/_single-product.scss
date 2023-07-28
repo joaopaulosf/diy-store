@@ -4,6 +4,12 @@
 .product {
   @include container;
   @include price($font-medium);
+  opacity: 0;
+  transition: all 0.5s;
+
+  &-show {
+    opacity: 1;
+  }
 
   &__image {
     width: 100%;
