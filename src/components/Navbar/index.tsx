@@ -14,7 +14,12 @@ export const Navbar = () => {
       <nav className="nav">
         <div className="nav__menu">{menuIcon}</div>
         <Link to="/" onClick={closeMenu}>
-          <img className="nav__image" src={BrandIcon} alt="brand-icon" />
+          <img
+            className="nav__image"
+            src={BrandIcon}
+            alt="brand-icon"
+            loading="lazy"
+          />
         </Link>
         <ul className={`nav__links ${dropdownMenu}`}>
           <li className="nav__item">

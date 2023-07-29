@@ -12,7 +12,12 @@ export const Card = ({ cardClass, stopRenderAt }: CardProps) => {
       {items.map((item) => (
         <Link to={`/products/${item.id}`} key={item.id} className={cardClass}>
           {item.sale && <span className="card__sale">sale</span>}
-          <img src={item.image.main} alt={item.name} className="card__image" />
+          <img
+            src={item.image.main}
+            alt={item.name}
+            className="card__image"
+            loading="lazy"
+          />
           <div className="card__content">
             <h1 className="card__name">{item.name}</h1>
             <p className="card__price">

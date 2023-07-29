@@ -19,10 +19,20 @@ export const ImageSwiper = ({ product }: { product: ProductProps }) => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <img className="product__image" src={image.main} alt={name} />
+        <img
+          className="product__image"
+          src={image.main}
+          alt={name}
+          loading="lazy"
+        />
       </SwiperSlide>
       <SwiperSlide>
-        <img className="product__image" src={image.content} alt={name} />
+        <img
+          className="product__image"
+          src={image.content}
+          alt={name}
+          loading="lazy"
+        />
       </SwiperSlide>
     </Swiper>
   );

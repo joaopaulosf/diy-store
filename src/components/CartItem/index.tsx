@@ -20,7 +20,7 @@ export const CartItem = ({ id, quantity }: CartItemProps) => {
 
   return (
     <section className="item" role="group">
-      <img src={image.main} alt={name} className="item__image" />
+      <img src={image.main} alt={name} className="item__image" loading="lazy" />
       <section className="item__info">
         <h2 className="item__name">{name}</h2>
         <span className="item__price">

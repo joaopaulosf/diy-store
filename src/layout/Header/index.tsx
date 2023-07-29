@@ -8,7 +8,12 @@ export const Header = () => {
 
   return (
     <section className="header">
-      <img className="header__image" src={bgWoman} alt="background-woman" />
+      <img
+        className="header__image"
+        src={bgWoman}
+        alt="background-woman"
+        loading="lazy"
+      />
       <section
         ref={myRef}
         className={`${"header__content"} ${
