@@ -16,6 +16,7 @@ DIY Store is a web application built for do-it-yourself enthusiasts. It aims to 
 - [Building the Project](#building-the-project)
 - [Linting](#linting)
 - [Preview](#preview)
+- [Used Tools](#used-tools)
 
 ## Getting Started
 ### Prerequisites
