@@ -1,6 +1,6 @@
-**DIY Store (Do it yourself)**
+# DIY Store (Do it yourself)
 
-**Overview**
+## Overview
 
 DIY Store is a web application built for do-it-yourself enthusiasts. It
 aims to provide a platform where users can find and purchase various DIY
@@ -8,9 +8,14 @@ products, tools, and materials. The project is developed using
 TypeScript, Vite, and Jest to ensure a robust and efficient development
 experience.
 
-**Table of Contents**
+## Table of Contents
 
--   **[Getting Started]{.underline}**
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Author](#author)
+
+- [Getting Started](#getting-started)
 
 -   **[Prerequisites]{.underline}**
 
