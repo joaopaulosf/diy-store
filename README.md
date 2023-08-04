@@ -69,6 +69,7 @@ If you want to collect code coverage during testing, you can use:
 ```sh
 npm run test:cov
 ```
+The coverage report will be generated in the project's directory for further analysis.
 
 ## Building the Project
 
