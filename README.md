@@ -1,5 +1,5 @@
 
-# DIY Store (Do it yourself)
+# DIY Store
 
 ##  Overview
 
