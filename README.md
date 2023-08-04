@@ -98,3 +98,15 @@ npm run preview
 ```
 
 This command will serve the production build locally, and you can access it in your browser at http://localhost:5143
+
+## Used tools
+
+This project uses the following tools:
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+- [Testing Library](https://testing-library.com/)
+- [Sass](https://sass-lang.com/)
+- [Swiper](https://swiperjs.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
