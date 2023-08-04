@@ -23,8 +23,9 @@ DIY Store is a web application built for do-it-yourself enthusiasts. It aims to 
 
 Make sure you have the following tools installed on your system:
 
-**Node.js (v14 or later)**
-**NPM (Node Package Manager)**
+
+`Node.js (v14 or later)`
+`NPM (Node Package Manager)`
 
 ### Installation
 
