@@ -1,12 +1,15 @@
 @use "../abstracts" as *;
 @use "../utilities/" as *;
 
+.navigation-bar {
+  border-bottom: 1px solid $color-border;
+}
+
 .nav {
   @include container;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid $color-border;
 
   &__links {
     display: flex;

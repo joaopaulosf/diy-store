@@ -1,9 +1,12 @@
 @use "./../abstracts" as *;
 @use "./../utilities/" as *;
 
+.footer-wrap {
+  border-top: 1px solid $color-border-light;
+}
+
 .footer {
   @include container;
-  border-top: 1px solid $color-border-light;
 
   &__title {
     font-size: $font-medium-plus;
