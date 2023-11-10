@@ -48,10 +48,10 @@ export default function Cart() {
             }, 0)
           )}
         </div>
-        <button className="cart__finish">
+        <Link to={"/checkout"} className="cart__finish">
           <Paypal className="cart__paypal" />
-          Paypal
-        </button>
+          Check Out
+        </Link>
       </section>
       <ProductCards
         cardClass="card"

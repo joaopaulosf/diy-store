@@ -62,6 +62,10 @@
     cursor: pointer;
     margin: 15px 0;
     background-color: rgba(133, 175, 99, 0.658);
+
+    &:hover {
+      background-color: rgba(133, 175, 99, 0.904);
+    }
   }
 
   &__paypal {

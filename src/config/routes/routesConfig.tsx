@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 import { Navbar } from "components/Navbar";
 import { Footer } from "layout/Footer";
 import { Home } from "pages/Home";
+import { CheckOut } from "pages/CheckOut";
 import Loading from "layout/Loading";
 const Auth = lazy(() => import("pages/Auth"));
 const Cart = lazy(() => import("pages/Cart"));
@@ -44,6 +45,10 @@ const routesConfig = [
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "checkout",
+        element: <CheckOut />,
       },
     ],
   },
