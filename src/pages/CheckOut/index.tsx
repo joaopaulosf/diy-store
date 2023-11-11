@@ -105,7 +105,7 @@ export function CheckOut() {
         </div>
       </section>
       <PopUp
-        imgUrl="public/assets/images/check.png"
+        imgUrl="/assets/images/check.png"
         title="Thank You!"
         message="purchase successfully paid"
       />
