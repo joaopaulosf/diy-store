@@ -70,6 +70,10 @@ export const ShoppingCartProvider = ({
     [getItemQuantity, updateCartItemQuantity, removeFromCart]
   );
 
+  const removeAllCart = useCallback(() => {
+    setCartItems(() => []);
+  }, [setCartItems]);
+
   const value = {
     getItemQuantity,
     increaseQuantity,
@@ -78,6 +82,7 @@ export const ShoppingCartProvider = ({
     getCartItem,
     cartItems,
     cartQuantity,
+    removeAllCart,
   };
 
   return (

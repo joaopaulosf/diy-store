@@ -2,9 +2,14 @@ import {
   RiMastercardFill as MasterCard,
   RiVisaLine as Visa,
 } from "react-icons/ri";
-import { Link } from "react-router-dom";
 
 export function CreditCard() {
+  const handleClick = () => {
+    const popup = document.getElementById("popup");
+
+    popup?.classList.add("popup__open");
+  };
+
   return (
     <div className="checkout__payment">
       <span className="creditcard">
@@ -31,13 +36,9 @@ export function CreditCard() {
         type="text"
         placeholder="Name on card"
       />
-      <Link
-        to={"/"}
-        className="checkout__finish"
-        onClick={() => localStorage.clear()}
-      >
+      <section className="checkout__finish" onClick={() => handleClick()}>
         Finish
-      </Link>
+      </section>
     </div>
   );
 }

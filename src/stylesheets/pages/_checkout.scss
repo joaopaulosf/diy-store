@@ -5,6 +5,7 @@
   transition: all 0.5s;
   max-width: 500px;
   margin: 0 auto;
+  position: relative;
 
   &__content {
     @include container;
@@ -14,7 +15,9 @@
   }
 
   &__delivery {
+    width: 100%;
     display: grid;
+    justify-content: center;
     grid-template-areas:
       "title title"
       "first last"

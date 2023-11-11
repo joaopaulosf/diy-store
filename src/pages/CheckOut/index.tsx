@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import { CreditCard } from "components/CreditCard";
+import { PopUp } from "components/PopUp";
 
 export function CheckOut() {
   const [status, setStatus] = useState<number>(0);
@@ -10,8 +10,14 @@ export function CheckOut() {
     setStatus(status);
   };
 
+  const handleClick = () => {
+    const popup = document.getElementById("popup");
+
+    popup?.classList.add("popup__open");
+  };
+
   return (
-    <div className="checkout">
+    <div className="checkout" id="checkout">
       <section className="checkout__content">
         <div className="checkout__delivery">
           <h1 className="delivery__title">Delivery</h1>
@@ -88,13 +94,21 @@ export function CheckOut() {
             {status === 0 ? (
               <CreditCard />
             ) : (
-              <Link to={"/"} className="checkout__finish">
+              <section
+                className="checkout__finish"
+                onClick={() => handleClick()}
+              >
                 Finish
-              </Link>
+              </section>
             )}
           </section>
         </div>
       </section>
+      <PopUp
+        imgUrl="public/assets/images/check.png"
+        title="Thank You!"
+        message="purchase successfully paid"
+      />
     </div>
   );
 }

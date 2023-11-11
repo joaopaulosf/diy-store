@@ -45,6 +45,7 @@ export type ShoppCartContext = {
   decreaseQuantity: (id: number) => void;
   removeFromCart: (id: number) => void;
   getCartItem: (id: number) => ProductType;
+  removeAllCart: () => void;
   cartQuantity: number;
   cartItems: CartItem[];
 };
@@ -53,4 +54,10 @@ export type IuseNav = {
   closeMenu: () => void;
   menuIcon: ReactNode;
   dropdownMenu: string | false;
+};
+
+export type PopUpProps = {
+  imgUrl: string;
+  title: string;
+  message: string;
 };

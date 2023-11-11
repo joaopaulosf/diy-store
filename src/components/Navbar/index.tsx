@@ -32,11 +32,11 @@ export const Navbar = () => {
               Buy now
             </Link>
           </li>
-          <li className="nav__item">
+          {/* <li className="nav__item">
             <Link to="/auth" onClick={closeMenu}>
               Login
             </Link>
-          </li>
+          </li> */}
         </ul>
         <div className="nav__cart">
           <Link to="/cart" className="navcart" onClick={closeMenu}>
