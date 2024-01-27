@@ -32,7 +32,7 @@ Make sure you have the following tools installed on your system:
 1. Clone this repository to your local machine:
 
 ```sh
-git clone joaopaulosf/diy-store
+git clone https://github.com/joaopaulosf/diy-store.git
 ```
 
 2. Change your current directory to the project folder:
